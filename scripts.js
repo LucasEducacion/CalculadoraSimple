@@ -18,7 +18,7 @@ function realizarOperacion() {
         const resultado = eval(expresion);
         let historia = document.createElement('li');
         historia.innerHTML = resultado;
-        historial.appendChild(historia);
+        historial.prepend(historia);
         alert(`Resultado: ${resultado}`);
     } catch (error) {
         alert('Expresión inválida');
