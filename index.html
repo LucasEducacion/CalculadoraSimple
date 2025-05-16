@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora Simple</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="Resultado">
+            <input type="text" name="resultado" id="resultado" readonly>
+
+        </div>
+        <div class="botonesYOperaciones">
+            <button class="btN">7</button>
+            <button class="btN">8</button>
+            <button class="btN">9</button>
+            <button class="btN">/</button>
+
+            <button class="btN">4</button>
+            <button class="btN">5</button>
+            <button class="btN">6</button>
+            <button class="btN">*</button>
+
+            <button class="btN">1</button>
+            <button class="btN">2</button>
+            <button class="btN">3</button>
+            <button class="btN">-</button>
+
+            <button class="btN">0</button>
+            <button class="btN">+</button>
+            <button onclick="borrarNumeros()" class="btNBorrar">Borrar</button>
+            <button onclick="realizarOperacion()" class="btNIgual">=</button>
+        </div>
+
+        <div>
+            <h2>Historial</h2>
+            <details>
+                <summary>Expandir</summary>
+                <ul id="historial" class="historialCaja">
+                </ul>
+            </details>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>

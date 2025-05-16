@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #250061, #5602dd);
+    padding: 10px;
+}
+
+button {
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 100px;
+    padding: 10px 10px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    margin: 5px;
+}
+
+button:hover {
+    background: #b4b4b4;
+}
+
+input {
+    padding-left: 10px;
+    font-size: larger;
+    border-radius: 50px;
+    outline: none;
+    background-color: #c4c4c4;
+    width: 500px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.botonesYOperaciones {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 5px;
+    justify-content: start;
+}
+
+h2 {
+    font-size: 50px;
+    color: #ff5945;
+}
+
+ul {
+    margin-top: 10px;
+}
+
+li {
+    list-style: none;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: #000000;
+    user-select: none;
+}
+
+.historialCaja {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
